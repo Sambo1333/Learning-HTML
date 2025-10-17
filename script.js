@@ -36,6 +36,7 @@ const wicon1 = {
 }
 const wicon = {
     Clear: "Sunny☀️",
+    Unknown: "unknown",
     Rain: "Raining🌧️",
     Clouds: "Cloudy☁️",
     snow: "Snow❄️",
