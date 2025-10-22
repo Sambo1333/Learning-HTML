@@ -129,15 +129,33 @@ async function getweather() {
         console.log(err)
     }
     try {
-        const response2 = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=11.5564&longitude=104.9282&hourly=temperature_2m,relative_humidity_2m,rain,uv_index,uv_index_clear_sky,is_day,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m,soil_temperature_6cm,surface_pressure,pressure_msl,visibility,vapour_pressure_deficit&timezone=Asia%2FBangkok`);
+        const response2 = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=11.5564&longitude=104.9282&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weathercode,uv_index_max,windspeed_10m_max,sunrise,sunset&timezone=auto&forecast_days=7`);
         if (!response2.ok) {
             throw new Error("Error");
 
         }
-        const data2 = await response2.json()
+
+        const data2 = await response2.json();
         console.log(data2)
-        const dayforcast = data2.is_day[0, 99][100, 167]
-        const dayfor1 = dayforcast
+        const dayfor = data2.daily.time;
+        const tempmin = data2.daily.temperature_2m_min;
+        const tempmax = data2.daily.temperature_2m_max;
+        const UV = data2.daily.uv_index_max[0];
+        const wind = data2.daily.windspeed_10m_max[0];
+        
+
+        const daynamez = document.getElementsByClassName('dayz')
+        for( let i = 0; i < dayfor.length; i++){
+        const datefor = new Date (dayfor[i])
+        const dayname = datefor.toLocaleDateString("en-US", {weekday: "short"})
+        daynamez[i].textContent = dayname;
+        }
+        const tempH = document.getElementsByClassName('Temp')
+        for (let z = 0; z < tempmin.length && tempmax.length; z++){
+        tempH[z].textContent = tempmin[z] + "°C - " + tempmax[z] + "°C"
+        }
+
+
 
         //document.getElementsByClassName("dayz1").textContent = dayforcast
 

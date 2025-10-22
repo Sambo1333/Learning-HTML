@@ -330,6 +330,11 @@ body {
     border: 1px dashed red;
 }
 */
+.temp{
+    max-width: 100%;
+    height: auto;
+
+}
 
 
 
