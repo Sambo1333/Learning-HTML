@@ -156,3 +156,38 @@ align-content: center;
 
 
 </div>
+
+
+const daynamez = document.getElementsByClassName('dayz')
+        for( let i = 0; i < dayfor.length; i++){
+        const datefor = new Date (dayfor[i])
+        const dayname = datefor.toLocaleDateString("en-US", {weekday: "short"})
+        daynamez[i].textContent = dayname;
+        }
+        const tempH = document.getElementsByClassName('Temp')
+        for (let z = 0; z < tempmin.length && tempmax.length; z++){
+        tempH[z].textContent = Math.round(tempmin[z]) + "°C - " + Math.round(tempmax[z]) + "°C"
+        }
+
+        document.getElementById('UVv').textContent = UV 
+        let uvValue = UV;
+        let maxUv = 11;
+        let percentage = (uvValue / maxUv) * 100;
+        document.getElementById('UVc').style.width = percentage + '%';
+
+
+
+
+
+        let status = "";
+        if (Humid < 20) {
+          status = "Very dry";
+        } else if (Humid < 40) {
+          status = "Dry";
+        } else if (Humid < 60) {
+          status = "Comfortable";
+        } else if (Humid < 80) {
+          status = "Humid";
+        } else {
+          status = "Very humid";
+        }

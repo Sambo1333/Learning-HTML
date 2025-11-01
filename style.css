@@ -163,8 +163,8 @@ body {
 
 .Mcontainer {
     /*  border: 1px dashed red; */
-    width: 70%;
-    height: 70vh;
+    width: 60%;
+    height: 80vh;
     margin-left: 15%;
     margin: 10%;
     display: grid;
@@ -193,7 +193,7 @@ body {
 .McontainerL {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 40% 30% 30%;
+    grid-template-rows:10% 30% 30% 30%;
 
 
 
@@ -241,18 +241,32 @@ body {
 #Ccity {
     max-width: 100%;
     max-height: 100%;
-    width: auto;
-    height: auto;
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    position: relative;
+    bottom: 10%;
 
 }
 
 .citybox {
-    border: 1px dashed red;
-    width: 70%;
-    height: 40%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    
 
 }
+#Ccityt{
+ font-size: 2rem;
+ position: relative;
+ bottom: 5%;
 
+}
 
 
 
@@ -385,6 +399,7 @@ body {
 .TDHe {
     background-color: white;
     border-radius: 10%;
+    
 }
 
 .RBtext {
@@ -394,18 +409,419 @@ body {
     left: 2%;
     text-decoration: underline;
 }
+.UVb{
+    border: 2.5px solid black;
+    width: 80%;
+    height: 20%;
+    position: relative;
+    top: 10%;
+    left: 6%;
+    border-radius: 20px;
+    overflow: hidden; 
+    
+}
+#UVc{
+    background: linear-gradient(to right, orange, red);
+    width: 0%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#UVv{
+    position: relative;
+    left: 45%;
+    top: 5%;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+#UVt{
+    margin: 10px;
+    opacity: 50%;
+}
+#WindT{
+    margin: 10px;
+    opacity: 50%;
+}
+.WindS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#WindV{
+    font-size: 2rem;
+}
+#Windkm{
+    opacity: 50%;
+    margin: 2%;
+    position: relative;
+
+}
+#SunT{
+    margin: 10px;
+    opacity: 50%;
+}
+.Sunbox{
+    height: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+/*.Sunbox >*{
+  border: 1px dashed red;
+}*/
+.Sunrise{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.Sunriseimg{
+    max-width: 100%;
+    max-height: 100%;
+}
+#SunriseT{
+    margin: 5%;
+}#SunsetT{
+    margin: 5%;
+}
+
+.Humidity{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+/*.Humidity >*{
+    border: 1px dashed red;
+}*/
+.LHumid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 50% 30%;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+
+    
+}
+/*  .LHumid >*{
+    border: 1px dashed blue;
+}*/
+#Humidt{
+    position: relative;
+    left: 5px;
+    opacity: 50%;
+    font-size: 1.1rem;
+}
+.HumidV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#HumidV1{
+    font-size: 1.6rem;
+}
+#HumidS1{
+    position: relative;
+    left: 10px;
+    opacity: 50%;
+}
+#HumidS2{
+    position: relative;
+    left: 10px;
+    color: red;
+
+}
+.HumidS{
+    display: flex;
+
+}
+.RHumid{
+
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    background-color: rgba(255, 166, 0, 0.151);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: end;
+    justify-items: center;
+    overflow: hidden;
+
+}
+#RHumidBar{
+    width: 90%;
+    height: 10%;
+    background: rgba(255, 166, 0, 0.603);
+    border-radius: 200px;
+    position: relative;
+    bottom: 0%;
+    
+}
+
+/* HERE */
 
 
 
 
 
 
+.Visibility{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+/*.Humidity >*{
+    border: 1px dashed red;
+}*/
+.LVis{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 50% 30%;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
 
+    
+}
+/*  .LHumid >*{
+    border: 1px dashed blue;
+}*/
+#Vist{
+    position: relative;
+    left: 5px;
+    opacity: 50%;
+    font-size: 1.1rem;
+}
+.VisV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#VisV1{
+    font-size: 1.6rem;
+}
+#VisS1{
+    position: relative;
+    left: 10px;
+    opacity: 50%;
+}
+#VisS2{
+    position: relative;
+    left: 10px;
+    color: red;
 
+}
+.VisS{
+    display: flex;
 
+}
+.RVis{
 
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    background-color: rgba(255, 166, 0, 0.151);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: start;
+    justify-items: center;
+    overflow: hidden;
 
+}
+#RVisBar{
+    width: 90%;
+    height: 10%;
+    background: rgba(255, 166, 0, 0.603);
+    border-radius: 200px;
+    position: relative;
+    top: 0%;
+    
+}
 
+/* HEREEEEEEE*/
+
+.Air{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+/*.Humidity >*{
+    border: 1px dashed red;
+}*/
+.LAir{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 50% 30%;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+
+    
+}
+/*  .LHumid >*{
+    border: 1px dashed blue;
+}*/
+#Airt{
+    position: relative;
+    left: 5px;
+    opacity: 50%;
+    font-size: 1.1rem;
+}
+.AirV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#AirV1{
+    font-size: 1.6rem;
+}
+#AirS1{
+    position: relative;
+    left: 10px;
+    opacity: 50%;
+}
+#AirS2{
+    position: relative;
+    left: 10px;
+    color: red;
+
+}
+.AirS{
+    display: flex;
+
+}
+.RAir{
+
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    background-color: rgba(255, 166, 0, 0.151);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: end;
+    justify-items: center;
+    overflow: hidden;
+
+}
+#RAirBar{
+    width: 90%;
+    height: 10%;
+    background: rgba(255, 166, 0, 0.603);
+    border-radius: 200px;
+    position: relative;
+    bottom: 0%;
+    
+}
+.Icon{
+    max-width: 100%;
+    max-height: 100%;
+}
+.Icon1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+#Humidper{
+    opacity: 50%;
+}
+#VisKm{
+    opacity: 50%;
+}
+.searchbarc{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.searchbar{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    transition: box-shadow 0.25s;
+    position: relative
+    
+}
+.searchbar:focus-within{    
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.75);
+    border-radius: 20px 20px 0 0;
+}
+.searchinput{
+    font-size: 1.1rem;
+    color: #333333;
+    margin-left: 1%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+.searchinput::placeholder, .searchicon {
+    color: rgb(0, 0, 0, 0.40);
+}
+.resultsp {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  width: 100%;
+  max-height: calc(4 * 43px);
+  overflow-y: auto;
+  display: none;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.searchform:focus-within .resultsp {
+    display: block;
+}
+.searchbar:focus-within + .resultsp {
+    background-color: #f9f9f9;
+}
+.searchform {
+  position: relative;
+
+}
+.result-item {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.result-item:hover {
+    background-color: #f0f0f0;
+}
+.resultsp::-webkit-scrollbar {
+    display: none;
+}
 
 
 

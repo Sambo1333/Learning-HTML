@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 
 </head>
 
@@ -28,9 +29,37 @@
     <div class="Mcontainer">
 
         <div class="McontainerL">
-            <div class="itemL weatherL">
-                <img id="Cweather" alt="openweather">
+
+            <div class="searchbarc">
+              <form action="click" class="searchform">
+                
+                <div class="searchbar">
+                    <span class="searchicon material-symbols-outlined">search</span>
+                    <input type="search" class="searchinput" placeholder="Search places">
+
+
+
+                </div>
+
+                <div class="resultsp" id="resultP">
+                    
+                
+                </div>
+              </form>
             </div>
+
+
+
+
+
+
+
+
+
+            <div class="itemL weatherL">
+                <img id="Cweather" src="" alt="openweather">
+            </div>
+
             <div class="itemL">
                 <div class="itemL2">
 
@@ -47,8 +76,14 @@
 
                 </div>
             </div>
+            
             <div class="itemL citys">
-                <div class="citybox"><img id="Ccity" src="images/phnomp1.jpg" alt="PP"></div>
+
+                <div class="citybox">
+                    <img id="Ccity" src="images/phnomp1.jpg" alt="PP">
+                    <div id="Ccityt">Phnom Penh</div>
+                </div>
+
             </div>
         </div>
 
@@ -58,37 +93,51 @@
             <div class="d4y">
                 <div class="days Mon">
                     <div class="items dayz" id="day1">A1</div>
-                    <div class="items Icon">B</div>
+                    <div class="items Icon1">
+                        <img class="Icon" src="" alt="">
+                    </div>
                     <div class="items Temp">C</div>
                 </div>
                 <div class="days Tue">
                     <div class="items dayz" id="day2">A</div>
-                    <div class="items Icon">B</div>
+                    <div class="items Icon1">
+                        <img class="Icon" src="" alt="">
+                    </div>
                     <div class="items Temp">C</div>
                 </div>
                 <div class="days Wed">
                     <div class="items dayz" id="day3">A</div>
-                    <div class="items Icon">B</div>
+                    <div class="items Icon1">
+                        <img class="Icon" src="" alt="">
+                    </div>
                     <div class="items Temp">C</div>
                 </div>
                 <div class="days Thu">
                     <div class="items dayz" id="day4">A</div>
-                    <div class="items Icon">B</div>
+                    <div class="items Icon1">
+                        <img class="Icon" src="" alt="">
+                    </div>
                     <div class="items Temp">C</div>
                 </div>
                 <div class="days Fri">
                     <div class="items dayz" id="day5">A</div>
-                    <div class="items Icon">B</div>
+                    <div class="items Icon1">
+                        <img class="Icon" src="" alt="">
+                    </div>
                     <div class="items Temp">C</div>
                 </div>
                 <div class="days Sat">
                     <div class="items dayz" id="day5">A</div>
-                    <div class="items Icon">B</div>
+                    <div class="items Icon1">
+                        <img class="Icon" src="" alt="">
+                    </div>
                     <div class="items Temp">C</div>
                 </div>
                 <div class="days Sun">
                     <div class="items dayz" id="day6">A</div>
-                    <div class="items Icon">B</div>
+                    <div class="items Icon1">
+                        <img class="Icon" src="" alt="HII">
+                    </div>
                     <div class="items Temp">C</div>
                 </div>
             </div>
@@ -104,12 +153,109 @@
         <div class="McontainerRB">
             <div class="RBtext">Today's highlight</div>
             <div class="TDH">
-                <div class="TDHe UV">UV</div>
-                <div class="TDHe Wind">Wind</div>
-                <div class="TDHe Sunrise">Sunrise</div>
-                <div class="TDHe Humidity">Humidity</div>
-                <div class="TDHe Visibility">Visibility</div>
-                <div class="TDHe Air">Air</div>
+                
+                <div class="TDHe UV">
+                    <p id="UVt">UV index</p>
+                    <div class="UVb">
+                        <div id="UVc"></div>
+                    </div>
+                    <p id="UVv">Number</p>
+                </div>
+                
+                
+                
+                <div class="TDHe Wind">
+                    <p id="WindT">Wind Status</p>
+                    <div class="WindS">
+                        <p id="WindV">8.75</p>
+                        <p id="Windkm">Km/h</p>
+                    </div>
+                </div>
+
+
+                <div class="TDHe Sunrise1">
+                    <p id="SunT">Sunrise & Sunset</p>
+                    
+                    <div class="Sunbox">
+                        
+                        <div class="Sunrise">
+                           <div id="SunriseI"><img class="Sunriseimg" src="images/sunrise.png" alt="sunrise"></div>
+                            <div id="SunriseT"><p>Time</p></div>
+                        </div>
+                        <div class="Sunrise">
+                           <div id="SunsetI"><img class="Sunriseimg" src="images/sunset.png" alt="sunset"></div>
+                            <div id="SunsetT"><p>Time</p></div>
+                        </div>                    
+                    </div>
+                </div>
+
+
+                <div class="TDHe Humidity">
+                    
+                    
+                    <div class="LHumid">
+                        <p id="Humidt">Humidity</p>
+                        
+                        <div class="HumidV">
+                            <p id="HumidV1">99</p>
+                            <p id="Humidper">%</p>
+                        </div>
+
+                        <div class="HumidS">
+                            <p id="HumidS1">Status: <p id="HumidS2">Value</p><p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="RHumid">
+                        <div id="RHumidBar"></div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="TDHe Visibility">
+                    <div class="LVis">
+                        <p id="Vist">Visibility</p>
+                        
+                        <div class="VisV">
+                            <p id="VisV1">99</p>
+                            <p id="VisKm">Km</p>
+                        </div>
+
+                        <div class="VisS">
+                            <p id="VisS1">Status: <p id="VisS2">Value</p><p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="RVis">
+                        <div id="RVisBar"></div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="TDHe Air">
+                    <div class="LAir">
+                        <p id="Airt">Air Quality</p>
+                        
+                        <div class="AirV">
+                            <p id="AirV1">99</p>
+                        </div>
+
+                        <div class="AirS">
+                            <p id="AirS1">Status: <p id="AirS2">Value</p><p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="RAir">
+                        <div id="RAirBar"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
